@@ -1,0 +1,180 @@
+:root {
+  --blue: #2196f3;
+  --black: #212121;
+  --grey: #757575;
+  --background: #2f303a;
+}
+body {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--grey);
+}
+
+/* =========================================== HEADER & FOOTER ============================================= */
+
+.logo-blue,
+.logo-black,
+.logo-white {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.43;
+
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+
+.logo-blue {
+  color: var(--blue);
+}
+.logo-black {
+  color: black;
+}
+.logo-white {
+  color: #ffffff;
+}
+.subpages {
+  text-decoration: none;
+  color: #212121;
+}
+.subpages:hover,
+.subpages:focus {
+  color: var(--blue);
+}
+.address-place,
+.address-mail,
+.address-phone {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
+.address-place {
+  color: rgb(255, 255, 255);
+}
+.address-mail,
+.address-phone {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer {
+  background-color: var(--background);
+}
+.address-list,
+.main-site-description,
+.main-imgs,
+.crew-list,
+.main-crew,
+.portfolio-buttons,
+.portfolio-grid,
+.portfolio-grid-sub {
+  list-style: none;
+}
+/* =============================================== BUTTONS ================================================== */
+.btn-primary {
+  /* position: absolute; */
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background-color: var(--blue);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+.btn-list {
+  /* position: absolute; */
+  width: 121px;
+  height: 38px;
+  background-color: #f5f4fa;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-list:hover,
+.btn-list:focus {
+  background-color: var(--blue);
+}
+
+/* ================================================= MAIN SITE ============================================ */
+
+.headline-main {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.headline-second {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.43;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--black);
+}
+.main-site-description > span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.main-site-description > p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.crew-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.43;
+
+  /* identical to box height */
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+.crew-tag {
+  font-size: 16px;
+  line-height: 1;
+
+  /* identical to box height */
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+.headline-main-div {
+  background-color: var(--background);
+}
+
+/* ============================================== PORTFOLIO =================================================== */
+.portfolio-img-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: var(--black);
+}
+.portfolio-img-text {
+  font-size: 16px;
+  line-height: 1.88;
+
+  /* identical to box height, or 188% */
+  letter-spacing: 0.03em;
+}
