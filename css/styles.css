@@ -1,8 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 :root {
   --blue: #2196f3;
   --black: #212121;
   --grey: #757575;
   --background: #2f303a;
+  --white: #ffffff;
 }
 body {
   font-family: Roboto;
@@ -26,16 +30,17 @@ body {
 
 .logo-blue {
   color: var(--blue);
+  margin-left: 215px;
 }
 .logo-black {
   color: black;
 }
 .logo-white {
-  color: #ffffff;
+  color: var(--white);
 }
 .subpages {
   text-decoration: none;
-  color: #212121;
+  color: var(--black);
 }
 .subpages:hover,
 .subpages:focus {
@@ -50,6 +55,23 @@ body {
 
   /* or 171% */
   letter-spacing: 0.03em;
+}
+.headbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.headbar-list {
+  display: flex;
+}
+.headbar-list-sub {
+  margin-right: 46px;
+}
+.headbar-list:first-child {
+  margin-left: 93px;
+}
+.headbar > .headbar-contact {
+  justify-content: flex-end;
 }
 .address-place {
   color: rgb(255, 255, 255);
@@ -87,7 +109,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--white);
   border-radius: 5px;
   border: none;
 }
@@ -113,7 +135,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white);
 }
 .headline-second {
   font-weight: 700;
@@ -130,7 +152,7 @@ body {
   line-height: 1.43;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--black);
 }
 .main-site-description > p {
   font-size: 14px;
@@ -159,6 +181,7 @@ body {
 
 .headline-main-div {
   background-color: var(--background);
+  /* display: flex; */
 }
 
 /* ============================================== PORTFOLIO =================================================== */
