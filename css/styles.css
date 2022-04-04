@@ -1,19 +1,39 @@
-* {
-  box-sizing: border-box;
-}
 :root {
-  --blue: #2196f3;
-  --black: #212121;
-  --grey: #757575;
-  --background: #2f303a;
-  --white: #ffffff;
+    --blue: #2196f3;
+    --black: #212121;
+    --grey: #757575;
+    --background: #2f303a;
+    --white: #ffffff;
 }
+
+/* *{
+  box-sizing: border-box;
+} */
 body {
   font-family: Roboto;
   font-style: normal;
   color: var(--grey);
 }
 
+h1, h2, h3, h4, h5, h6{
+margin: 0;
+padding: 0;
+}
+ p{
+   padding: 0;
+ }
+ ul{
+   padding: 0;
+   margin: 0;
+ }
+
+ .container {
+   width: 1600px;
+ }
+ img{
+   display: block;
+ }
+ 
 /* =========================================== HEADER & FOOTER ============================================= */
 
 .logo-blue,
@@ -22,7 +42,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.43;
+  line-height: 1;
 
   /* identical to box height */
   letter-spacing: 0.03em;
@@ -30,7 +50,6 @@ body {
 
 .logo-blue {
   color: var(--blue);
-  margin-left: 215px;
 }
 .logo-black {
   color: black;
@@ -51,27 +70,10 @@ body {
 .address-phone {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1;
 
   /* or 171% */
   letter-spacing: 0.03em;
-}
-.headbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.headbar-list {
-  display: flex;
-}
-.headbar-list-sub {
-  margin-right: 46px;
-}
-.headbar-list:first-child {
-  margin-left: 93px;
-}
-.headbar > .headbar-contact {
-  justify-content: flex-end;
 }
 .address-place {
   color: rgb(255, 255, 255);
@@ -82,40 +84,67 @@ body {
 }
 .footer {
   background-color: var(--background);
+  padding: 60px 215px;
 }
-.address-list,
-.main-site-description,
-.main-imgs,
-.crew-list,
-.main-crew,
-.portfolio-buttons,
-.portfolio-grid,
-.portfolio-grid-sub {
+.list {
   list-style: none;
+}
+.link{
+  text-decoration: none;
+}
+.nav-div {
+  display: flex;
+  align-items: center;
+}
+.header{
+  border-bottom: 1px solid #ECECEC;
+  color:var(--grey);
+padding: 32px 0px;
+}
+.logo-div{
+  margin-right: 93px;
+  margin-left:215px;
+}
+.address-list{
+  display: flex;
+  align-items: center;
+}
+.address-list-li:not(:last-child) {
+  margin-right: 46px;
+}
+.header-mail{
+  margin-left: auto;
+  margin-right: 50px;
+}
+.header-tel{
+  margin-right: 227px;
+}
+
+.footer-list-li:not(:last-child){
+padding-bottom: 9px;
+}
+.footer-list-li:first-child{
+  padding-top: 20px;
 }
 /* =============================================== BUTTONS ================================================== */
 .btn-primary {
   /* position: absolute; */
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
+  margin-top: 30px;
+  margin-left: 700px;
   background-color: var(--blue);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--white);
   border-radius: 5px;
   border: none;
 }
+
 .btn-list {
   /* position: absolute; */
-  width: 121px;
   height: 38px;
   background-color: #f5f4fa;
   border-radius: 5px;
@@ -124,18 +153,20 @@ body {
 .btn-list:hover,
 .btn-list:focus {
   background-color: var(--blue);
+  color: var(--white)
 }
 
 /* ================================================= MAIN SITE ============================================ */
-
 .headline-main {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 0.5;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
+  padding-top: 106px;
+  
 }
 .headline-second {
   font-weight: 700;
@@ -143,10 +174,10 @@ body {
   line-height: 1.43;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--black);
+  padding-bottom: 50px;
 }
-.main-site-description > span {
+.main-site-description > h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
@@ -158,6 +189,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 270px;
+}
+.main-site-description:not(:last-child){
+  margin-right: 30px;
 }
 
 .crew-name {
@@ -166,38 +201,124 @@ body {
   line-height: 1.43;
 
   /* identical to box height */
-  /* text-align: center; */
   letter-spacing: 0.03em;
   color: var(--black);
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .crew-tag {
   font-size: 16px;
   line-height: 1;
-
   /* identical to box height */
-  /* text-align: center; */
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
 }
-
+.crew-name,
+.crew-tag{
+text-align: center;
+}
 .headline-main-div {
   background-color: var(--background);
-  /* display: flex; */
+  width: 1600px;
+  height: 600px;
+ 
+}
+.section{
+  padding: 94px 0px;
+}
+.main-description,
+.main-imgs,
+.main-crew{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.main-description{
+  padding-top: 94px;
+}
+
+.main-imgs-li:not(:last-child){
+margin-right: 30px;
+}
+
+.main-crew-li:not(:last-child){
+  margin-right: 30px;
+}
+.main-crew-li{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+.main-crew-fig{
+  margin: 0px;
+}
+.main-imgs-li {
+  padding-top: 50px;
+}
+.third-section-bcgd{
+  background-color: #F5F4FA;
 }
 
 /* ============================================== PORTFOLIO =================================================== */
-.portfolio-img-title {
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  
 
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--black);
 }
+
+
 .portfolio-img-text {
   font-size: 16px;
   line-height: 1.88;
-
+  padding-bottom: 20px;
   /* identical to box height, or 188% */
   letter-spacing: 0.03em;
 }
+
+.portfolio-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+.btn-list-li:not(:last-child){
+  margin-right: 8px;
+}
+.btn-all{
+  width: 121px;
+}
+.btn-pages{
+  width: 93px;
+}
+.btn-app{
+  width: 114px;
+}
+.btn-design{
+  width: 91px;
+}
+.btn-marketing{
+  width: 121px;
+}
+.portfolio-grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.portfolio-grid-li{
+ margin-right: 30px;
+ padding-bottom: 30px;
+}
+.portfolio-fig{
+  margin: 0;
+}
+.portfolio-figcap{
+  padding: 20px 24px;
+}
+.portfolio-flex{padding: 0 100px;}

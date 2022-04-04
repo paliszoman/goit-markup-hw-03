@@ -12,53 +12,58 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+   <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
   </head>
-  <body>
-     <header class="headbar">
-      <span class="logo-blue">Web</span><span class="logo-black">Studio</span>
-        <nav>
-          <ul class="address-list headbar-list">
-          <li><a href="index.html" class="subpages headbar-list-sub">Agencja</a></li>
-          <li><a href="portfolio.html" class="subpages headbar-list-sub">Portfolio</a></li>
-          <li><a href="#kontakt" class="subpages headbar-list-sub">Kontakt</a></li>
-          </ul>
+  <body class="body container">
+     <header class="header container">
+       <div class="nav-div">
+      <div class="logo-div"><span class="logo-blue">Web</span><span class="logo-black">Studio</span></div>
+          <ul class="address-list list">
+          <li class="address-list-li"><a href="index.html" class="subpages link ">Agencja</a></li>
+          <li class="address-list-li"><a href="portfolio.html" class="subpages link ">Portfolio</a></li>
+          <li class="address-list-li"><a href="#kontakt" class="subpages link ">Kontakt</a></li>
+        </ul>
         </nav>
-<div class="headbar-contact">
-        <a href="mailto:info@devstudio.com" class="subpages">info@devstudio.com</a>
-        <a href="tel:+48111111111" class="subpages">+48 111 111 111</a>
-      </div>
+        
+
+        <a href="mailto:info@devstudio.com" class="subpages link header-mail">info@devstudio.com</a>
+        <a href="tel:+48111111111" class="subpages link header-tel">+48 111 111 111</a>
+        </div>
+      
     </header>
     <main>
-      <section>
-        <div class="headline-main-div">
-        <h1 class="headline-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      <div class="headline-main-div container ">
+      <section class="section">
+        <h1 class="headline-main">EFEKTYWNE ROZWIĄZANIA <p>DLA WASZEGO BIZNESU</p></h1>
         <button type="button" class="btn-primary">Zamów usługę</button>
-        </div>
+        </section>
+      </div>
 
-        <ul>
+      
+        <ul class="list main-description">
           <li class="main-site-description">
-            <span >LOREM IPSUM</span>
+            <h3 >LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
           <li class="main-site-description">
-            <span >LOREM IPSUM</span>
+            <h3 >LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
           <li class="main-site-description">
-            <span >LOREM IPSUM</span>
+            <h3 >LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
           <li class="main-site-description">
-            <span >LOREM IPSUM</span>
+            <h3 >LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
@@ -67,25 +72,26 @@
         </ul>
       
 
-      <section>
+      <section class="section container">
         <h2 class="headline-second">Czym się zajmujemy</h2>
 
-        <ul class="main-imgs">
-          <li><img src="images/job/box1.jpg" alt="komputer" width="370" height="294" /></li>
+        <ul class="main-imgs list">
+          <li class="main-imgs-li"><img src="images/job/box1.jpg" alt="komputer" width="370" height="294" /></li>
 
-          <li><img src="images/job/box2.jpg" alt="laptop" width="370" height="294" /></li>
+          <li class="main-imgs-li"><img src="images/job/box2.jpg" alt="laptop" width="370" height="294" /></li>
 
-          <li><img src="images/job/box3.jpg" alt="tablet" width="370" height="294" /></li>
+          <li class="main-imgs-li"><img src="images/job/box3.jpg" alt="tablet" width="370" height="294" /></li>
         </ul>
       </section>
-      <section>
+    <div class="third-section-bcgd">
+      <section class="container section">
         <h2 class="headline-second">Nasz zespół</h2>
-        <ul class="main-crew">
-          <li>
-            <figure>
+        <ul class="main-crew list">
+          <li class="main-crew-li">
+            <figure class="main-crew-fig">
               <img src="images/crew/1.jpg" alt="John Doe" width="270" height="260" />
               <figcaption>
-                <ul class="crew-list">
+                <ul class="crew-list list">
                   <li class="crew-name">John Doe</li>
                   <li class="crew-tag">Product Designer</li>
                 </ul>
@@ -93,11 +99,11 @@
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="main-crew-li">
+            <figure class="main-crew-fig">
               <img src="images/crew/2.jpg" alt="John Doe2" width="270" height="260" />
               <figcaption>
-                <ul class="crew-list">
+                <ul class="crew-list list">
                   <li class="crew-name">John Doe</li>
                   <li class="crew-tag">Frontend Developer</li>
                 </ul>
@@ -105,11 +111,11 @@
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="main-crew-li">
+            <figure class="main-crew-fig">
               <img src="images/crew/3.jpg" alt="John Doe3" width="270" height="260" />
               <figcaption>
-                <ul class="crew-list">
+                <ul class="crew-list list">
                   <li class="crew-name">John Doe</li>
                   <li class="crew-tag">Marketing</li>
                 </ul>
@@ -117,11 +123,11 @@
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="main-crew-li">
+            <figure class="main-crew-fig">
               <img src="images/crew/4.jpg" alt="John Doe4" width="270" height="260" />
               <figcaption>
-                <ul class="crew-list">
+                <ul class="crew-list list">
                   <li class="crew-name">John Doe</li>
                   <li class="crew-tag">UI Designer</li>
                 </ul>
@@ -130,17 +136,18 @@
           </li>
         </ul>
       </section>
+    </div>
     </main>
 
     <footer>
       <div class="footer">
       <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
       <address>
-        <ul class="address-list">
-          <li class="address-place subpages">m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li class="address-mail subpages">info@example.com</li>
-          <li class="address-phone subpages">+48 111 111 111</li>
-        </ul>
+      <ul class="address-list-footer list">
+            <li class="footer-list-li"><a href="https://goo.gl/maps/sYoEFAyqpLNGCCFF7" class="address-place subpages link">m. Warszawa, Aleje Jerozolimskie 21</li>
+            <li class="footer-list-li"><a href="mailto:info@example.com" class="address-mail subpages link">info@example.com</li>
+            <li class="footer-list-li"><a href="tel:+48111111111" class="address-phone subpages link">+48 111 111 111</li>
+          </ul>
       </address>
      </div>
     </footer>

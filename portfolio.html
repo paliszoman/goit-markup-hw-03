@@ -12,33 +12,43 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
   </head>
-  <body>
-    <header>
-      <span class="logo-blue">Web</span><span class="logo-black">Studio</span>
-      <nav>
-        <ul class="address-list">
-          <li><a href="index.html" class="subpages">Agencja</a></li>
-          <li><a href="portfolio.html" class="subpages">Portfolio</a></li>
-          <li><a href="#kontakt" class="subpages">Kontakt</a></li>
-        </ul>
-      </nav>
 
-      <a href="mailto:info@devstudio.com" class="subpages">info@devstudio.com</a>
-      <a href="tel:+48111111111" class="subpages">+48 111 111 111</a>
+  <body class="body container">
+     <header class="header container">
+       <div class="nav-div">
+      <div class="logo-div"><span class="logo-blue">Web</span><span class="logo-black">Studio</span></div>
+          <ul class="address-list list">
+          <li class="address-list-li"><a href="index.html" class="subpages link ">Agencja</a></li>
+          <li class="address-list-li"><a href="portfolio.html" class="subpages link ">Portfolio</a></li>
+          <li class="address-list-li"><a href="#kontakt" class="subpages link ">Kontakt</a></li>
+        </ul>
+        </nav>
+        
+
+        <a href="mailto:info@devstudio.com" class="subpages link header-mail">info@devstudio.com</a>
+        <a href="tel:+48111111111" class="subpages link header-tel">+48 111 111 111</a>
+        </div>
+      
     </header>
     <main>
-      <ul class="portfolio-buttons">
-        <li><button type="button" class="btn-list">Wszystkie</button></li>
-        <li><button type="button" class="btn-list">Strony</button></li>
-        <li><button type="button" class="btn-list">Aplikacje</button></li>
-        <li><button type="button" class="btn-list">Dizajn</button></li>
-        <li><button type="button" class="btn-list">Marketing</button></li>
+      <section class="section">
+      <ul class="portfolio-buttons list">
+        <li class="btn-list-li"><button type="button" class="btn-list link btn-all">Wszystkie</button></li>
+        <li class="btn-list-li"><button type="button" class="btn-list link btn-pages">Strony</button></li>
+        <li class="btn-list-li"><button type="button" class="btn-list link btn-app">Aplikacje</button></li>
+        <li class="btn-list-li"><button type="button" class="btn-list link btn-design">Dizajn</button></li>
+        <li class="btn-list-li"><button type="button" class="btn-list link btn-marketing">Marketing</button></li>
       </ul>
-      <ul class="portfolio-grid">
-        <li>
-          <figure>
-            <ul class="portfolio-grid-sub">
+      <div class="container portfolio-flex">
+      <ul class="portfolio-grid list">
+         <li class="portfolio-grid-li">
+          <figure class="portfolio-fig">
+            <ul class="portfolio-grid-sub list">
               <li>
                 <img
                   src="images/portfolio/mockup.jpg"
@@ -46,15 +56,15 @@
                   width="370"
                   height="294"
                 />
-              </li>
-              <li class="portfolio-img-title">Technocrack</li>
-              <li class="portfolio-img-text">Strona internetowa</li>
+              </li><figcaption class="portfolio-figcap">
+              <li class="portfolio-img-title"><h3 class="portfolio-title">Technocrack</h3></li>
+              <li class="portfolio-img-text">Strona internetowa</li></figcaption>
             </ul>
           </figure>
         </li>
-        <li>
-          <figure>
-            <ul class="portfolio-grid-sub">
+        <li class="portfolio-grid-li">
+          <figure class="portfolio-fig">
+            <ul class="portfolio-grid-sub list">
               <li>
                 <img
                   src="images/portfolio/basketball.jpg"
@@ -62,15 +72,15 @@
                   width="370"
                   height="294"
                 />
-              </li>
-              <li class="portfolio-img-title">Grafika New Orlean vs Golden Star</li>
-              <li class="portfolio-img-text">Dizajn</li>
+              </li><figcaption class="portfolio-figcap">
+              <li class="portfolio-img-title"><h3 class="portfolio-title">Grafika New Orlean vs Golden Star</h3></li>
+              <li class="portfolio-img-text">Dizajn</li></figcaption>
             </ul>
           </figure>
         </li>
-        <li>
-          <figure>
-            <ul class="portfolio-grid-sub">
+        <li class="portfolio-grid-li">
+          <figure class="portfolio-fig">
+            <ul class="portfolio-grid-sub list">
               <li>
                 <img
                   src="images/portfolio/seafood.jpg"
@@ -78,15 +88,15 @@
                   width="370"
                   height="294"
                 />
-              </li>
-              <li class="portfolio-img-title">Restauracja Seafood</li>
-              <li class="portfolio-img-text">Aplikacja</li>
+              </li><figcaption class="portfolio-figcap">
+              <li class="portfolio-img-title"><h3 class="portfolio-title">Restauracja Seafood</h3></li>
+              <li class="portfolio-img-text">Aplikacja</li></figcaption>
             </ul>
           </figure>
         </li>
-        <li>
-          <figure>
-            <ul class="portfolio-grid-sub">
+        <li class="portfolio-grid-li">
+          <figure class="portfolio-fig">
+            <ul class="portfolio-grid-sub list">
               <li>
                 <img
                   src="images/portfolio/hedphones.jpg"
@@ -94,37 +104,37 @@
                   width="370"
                   height="294"
                 />
-              </li>
-              <li class="portfolio-img-title">Projekt Prime</li>
-              <li class="portfolio-img-text">Marketing</li>
+              </li><figcaption class="portfolio-figcap">
+              <li class="portfolio-img-title"><h3 class="portfolio-title">Projekt Prime</h3></li>
+              <li class="portfolio-img-text">Marketing</li></figcaption>
             </ul>
           </figure>
         </li>
-        <li>
-          <figure>
-            <ul class="portfolio-grid-sub">
+        <li class="portfolio-grid-li">
+          <figure class="portfolio-fig">
+            <ul class="portfolio-grid-sub list">
               <li>
                 <img src="images/portfolio/boxes.jpg" alt="dwa pudełka" width="370" height="294" />
-              </li>
-              <li class="portfolio-img-title">Projekt Boxes</li>
-              <li class="portfolio-img-text">Aplikacja</li>
+              </li><figcaption class="portfolio-figcap">
+              <li class="portfolio-img-title"><h3 class="portfolio-title">Projekt Boxes</h3></li>
+              <li class="portfolio-img-text">Aplikacja</li></figcaption>
             </ul>
           </figure>
         </li>
-        <li>
-          <figure>
-            <ul class="portfolio-grid-sub">
+        <li class="portfolio-grid-li">
+          <figure class="portfolio-fig">
+            <ul class="portfolio-grid-sub list">
               <li>
                 <img src="images/portfolio/screen.jpg" alt="monitor" width="370" height="294" />
-              </li>
-              <li class="portfolio-img-title">Inspiration has no Borders</li>
-              <li class="portfolio-img-text">Strona internetowa</li>
+              </li><figcaption class="portfolio-figcap">
+              <li class="portfolio-img-title"><h3 class="portfolio-title">Inspiration has no Borders</h3></li>
+              <li class="portfolio-img-text">Strona internetowa</li></figcaption>
             </ul>
           </figure>
         </li>
-        <li>
-          <figure>
-            <ul class="portfolio-grid-sub">
+        <li class="portfolio-grid-li">
+          <figure class="portfolio-fig">
+            <ul class="portfolio-grid-sub list">
               <li>
                 <img
                   src="images/portfolio/paper.jpg"
@@ -132,15 +142,15 @@
                   width="370"
                   height="294"
                 />
-              </li>
-              <li class="portfolio-img-title">Magazyn Limited Edition</li>
-              <li class="portfolio-img-text">Dizajn</li>
+              </li><figcaption class="portfolio-figcap">
+              <li class="portfolio-img-title"><h3 class="portfolio-title">Magazyn Limited Edition</h3></li>
+              <li class="portfolio-img-text">Dizajn</li></figcaption>
             </ul>
           </figure>
         </li>
-        <li>
-          <figure>
-            <ul class="portfolio-grid-sub">
+        <li class="portfolio-grid-li">
+          <figure class="portfolio-fig">
+            <ul class="portfolio-grid-sub list">
               <li class="portfolio-img-title">
                 <img
                   src="images/portfolio/label.jpg"
@@ -148,15 +158,15 @@
                   width="370"
                   height="294"
                 />
-              </li>
-              <li class="portfolio-img-title">Projekt LAB</li>
-              <li class="portfolio-img-text">Marketing</li>
+              </li><figcaption class="portfolio-figcap">
+              <li class="portfolio-img-title"><h3 class="portfolio-title">Projekt LAB</h3></li>
+              <li class="portfolio-img-text">Marketing</li></figcaption>
             </ul>
           </figure>
         </li>
-        <li>
-          <figure>
-            <ul class="portfolio-grid-sub">
+        <li class="portfolio-grid-li">
+          <figure class="portfolio-fig">
+            <ul class="portfolio-grid-sub list">
               <li>
                 <img
                   src="images/portfolio/laptop.jpg"
@@ -164,25 +174,27 @@
                   width="370"
                   height="294"
                 />
-              </li>
-              <li class="portfolio-img-title">Growing Business</li>
-              <li class="portfolio-img-text">Aplikacja</li>
+              </li><figcaption class="portfolio-figcap">
+              <li class="portfolio-img-title"><h3 class="portfolio-title">Growing Business</h3></li>
+              <li class="portfolio-img-text">Aplikacja</li></figcaption>
             </ul>
           </figure>
         </li>
       </ul>
-    </main>
-    <footer>
-      <div class="footer">
-        <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
-        <address>
-          <ul class="address-list">
-            <li class="address-place subpages">m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li class="address-mail subpages">info@example.com</li>
-            <li class="address-phone subpages">+48 111 111 111</li>
-          </ul>
-        </address>
       </div>
+      </section>
+    </main>
+   <footer>
+      <div class="footer">
+      <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
+      <address>
+      <ul class="address-list-footer list">
+            <li class="footer-list-li"><a href="https://goo.gl/maps/sYoEFAyqpLNGCCFF7" class="address-place subpages link">m. Warszawa, Aleje Jerozolimskie 21</li>
+            <li class="footer-list-li"><a href="mailto:info@example.com" class="address-mail subpages link">info@example.com</li>
+            <li class="footer-list-li"><a href="tel:+48111111111" class="address-phone subpages link">+48 111 111 111</li>
+          </ul>
+      </address>
+     </div>
     </footer>
   </body>
 </html>
