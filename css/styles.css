@@ -10,7 +10,7 @@
   box-sizing: border-box;
 } */
 body {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   color: var(--grey);
 }
@@ -71,7 +71,7 @@ padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
-
+ 
   /* or 171% */
   letter-spacing: 0.03em;
 }
@@ -128,11 +128,8 @@ padding-bottom: 9px;
 }
 /* =============================================== BUTTONS ================================================== */
 .btn-primary {
-  /* position: absolute; */
   width: 200px;
   height: 50px;
-  margin-top: 30px;
-  margin-left: 700px;
   background-color: var(--blue);
   font-weight: 700;
   font-size: 16px;
@@ -141,10 +138,10 @@ padding-bottom: 9px;
   color: var(--white);
   border-radius: 5px;
   border: none;
+ 
 }
 
 .btn-list {
-  /* position: absolute; */
   height: 38px;
   background-color: #f5f4fa;
   border-radius: 5px;
@@ -166,6 +163,7 @@ padding-bottom: 9px;
   text-transform: uppercase;
   color: var(--white);
   padding-top: 106px;
+  padding-bottom: 30px;
   
 }
 .headline-second {
@@ -219,9 +217,14 @@ text-align: center;
 }
 .headline-main-div {
   background-color: var(--background);
-  width: 1600px;
-  height: 600px;
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn-prim-div{
+  padding-bottom: 106px;
+  
 }
 .section{
   padding: 94px 0px;
@@ -307,18 +310,30 @@ margin-right: 30px;
 }
 .portfolio-grid{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-wrap: wrap;
+  flex-basis: calc((100% - 30px) / 3);
 }
-.portfolio-grid-li{
+.portfolio-grid-li:not(:nth-child(3n+3)){
  margin-right: 30px;
- padding-bottom: 30px;
+
+}
+.portfolio-grid-li:nth-child(-n+6){
+margin-bottom: 30px;
+}
+.portfolio-grid {
+  margin-bottom: 30px;
 }
 .portfolio-fig{
   margin: 0;
 }
 .portfolio-figcap{
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-left: 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+
 }
-.portfolio-flex{padding: 0 100px;}
+.portfolio-flex{padding: 0 215px;}
