@@ -315,7 +315,9 @@ margin-right: 30px;
   align-items: center;
   flex-wrap: wrap;
   flex-basis: calc((100% - 30px) / 3);
+  
 }
+
 .portfolio-grid-li:not(:nth-child(3n+3)){
  margin-right: 30px;
 
@@ -323,9 +325,9 @@ margin-right: 30px;
 .portfolio-grid-li:nth-child(-n+6){
 margin-bottom: 30px;
 }
-.portfolio-grid {
+/* .portfolio-grid {
   margin-bottom: 30px;
-}
+} */
 .portfolio-fig{
   margin: 0;
 }
